@@ -23,11 +23,21 @@ a:hover {
 }
 
 body {
+  padding: 25px;
   margin: 0;
   display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  color: black;
+}
+
+.listgroup{
+  border: 1px solid black;
 }
 
 h1 {
@@ -71,6 +81,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  color: black;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -92,5 +103,6 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+    color: black;
   }
 }

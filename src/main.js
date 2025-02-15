@@ -49,11 +49,11 @@ response.documents.forEach((job)=>{
   li.id = job.$id
 
   const deleteBtn = document.createElement('button')
-  deleteBtn.textcontent = 'Delete'
+  deleteBtn.innerText = 'Delete'
   deleteBtn.onclick = () => removeJob(job.$id)
   
   const coffeeBtn = document.createElement('button')
-  coffeeBtn.textcontent = '☕️'
+  coffeeBtn.innerText = 'coffee'
   coffeeBtn.onclick = () => updateChat(job.$id)
   
   li.appendChild(coffeeBtn)
